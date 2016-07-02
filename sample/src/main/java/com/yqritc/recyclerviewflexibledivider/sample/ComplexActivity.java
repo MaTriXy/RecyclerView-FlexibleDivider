@@ -5,7 +5,7 @@ import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class ComplexActivity extends ActionBarActivity {
+public class ComplexActivity extends AppCompatActivity {
 
     public static void startActivity(Activity activity) {
         Intent intent = new Intent(activity, ComplexActivity.class);
@@ -62,8 +62,14 @@ public class ComplexActivity extends ActionBarActivity {
             case R.id.action_paint:
                 PaintActivity.startActivity(this);
                 return true;
+            case R.id.action_drawable:
+                DrawableActivity.startActivity(this);
+                return true;
             case R.id.action_complex:
                 ComplexActivity.startActivity(this);
+                return true;
+            case R.id.action_simple_grid:
+                SimpleGridActivity.startActivity(this);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

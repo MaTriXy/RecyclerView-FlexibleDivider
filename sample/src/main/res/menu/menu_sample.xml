@@ -11,7 +11,15 @@
         android:title="@string/menu_paint"
         app:showAsAction="never"/>
     <item
+        android:id="@+id/action_drawable"
+        android:title="@string/menu_drawable"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/action_complex"
         android:title="@string/menu_complex"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_simple_grid"
+        android:title="@string/menu_simple_grid"
         app:showAsAction="never"/>
 </menu>
